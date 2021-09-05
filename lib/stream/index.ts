@@ -2,11 +2,11 @@ import { LineStream } from 'byline';
 import { createReadStream, createWriteStream, mkdirSync, WriteStream } from 'fs';
 import { decodeStream } from 'iconv-lite';
 import { join } from 'path';
-import { Csv2JsonTransform } from 'transforms/csv2json.transform';
-import { Json2CsvTransform } from 'transforms/json2csv.transform';
-import { NewLineTransform } from 'transforms/new-line.transform';
 import { Field, Table } from '../shared';
-import { SkipTransform } from '../transforms/skip.transforms';
+import { Csv2JsonTransform } from '../transforms/csv2json';
+import { Json2CsvTransform } from '../transforms/json2csv';
+import { NewLineTransform } from '../transforms/new-line';
+import { SkipTransform } from '../transforms/skip';
 
 export type StreamType = NodeJS.ReadWriteStream | WriteStream;
 
