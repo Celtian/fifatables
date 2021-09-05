@@ -12,7 +12,7 @@
 [![forks](https://badgen.net/github/forks/celtian/fifatables)](https://github.com/celtian/fifatables/)
 [![HitCount](http://hits.dwyl.com/celtian/fifatables.svg)](http://hits.dwyl.com/celtian/fifatables)
 
-> Library for scraping soccer data from the internet
+> Library for managing Fifa Soccer tables
 
 ## Install
 
@@ -33,39 +33,71 @@ yarn add fifatables
 _Type this into your ts file._
 
 ```terminal
-import { soccerway, transfermarkt, fotbalunas, eurofotbal } from 'fifatables';
+  import { join } from 'path';
+  import { cwd } from 'process';
+  import { Fifa, fifaConfig, readCsvStream, Table, writeCsvStream } from 'fifatables';
 
-console.log(soccerway.teamUrl('533')); // show url
+  // config class with table definitions for fifa 11
+  console.log(fifaConfig(Fifa.Fifa11));
 
-soccerway.team('533')
-  .then(res => console.log(res));
+  // read league.txt from Fifa 11
+  readCsvStream(join(cwd(), 'examples', Fifa.Fifa11), Table.Leagues, fifaConfig(Fifa.Fifa11).leagues)
+    .on('data', (buffer: Buffer) => console.log(JSON.parse(buffer.toString())))
+    .on('finish', () => console.log('Reading finished.'));
 
-console.log(transfermarkt.teamUrl('62')); // show url
-
-transfermarkt.team('62')
-  .then(res => console.log(res));
-
-console.log(fotbalunas.teamUrl('62')); // show url
-
-fotbalunas.team('62')
-  .then(res => console.log(res));
-
-console.log(eurofotbal.teamUrl('cesko/sparta-praha')); // show url
-
-eurofotbal.team('cesko/sparta-praha')
-  .then(res => console.log(res));
+  // read league.txt from Fifa 11 and write it in Fifa 21 format
+  const table = Table.Leagues;
+  const readStream = readCsvStream(join(cwd(), 'examples', Fifa.Fifa11), table, fifaConfig(Fifa.Fifa11).leagues);
+  writeCsvStream(readStream, join(cwd(), 'output', Fifa.Fifa21), table, fifaConfig(Fifa.Fifa21).leagues)
+    .on('data', (buffer: Buffer) => console.log(JSON.parse(buffer.toString())))
+    .on('finish', () => console.log('Writing finished.'));
 ```
 
-## Sources
+## Supported versions of Fifa Soccer
 
-| Source            | Speed  | Stability | Coverage       |
-| ----------------- | ------ | --------- | -------------- |
-| **transfermarkt** | ⚽⚽⚽ | ⚽⚽⚽    | World          |
-| **soccerway**     | ⚽     | ⚽        | World          |
-| **fotbalunas**    | ⚽     | ⚽⚽⚽    | Czech Republic |
-| **eurofotbal**    | ⚽⚽   | ⚽⚽      | Europe         |
+| Fifa        | Supported |
+| ----------- | --------- |
+| **Fifa 11** | ✓         |
+| **Fifa 12** | ✓         |
+| **Fifa 13** | ✓         |
+| **Fifa 14** | ✓         |
+| **Fifa 15** | ✓         |
+| **Fifa 16** | ✓         |
+| **Fifa 17** | ✓         |
+| **Fifa 18** | ✓         |
+| **Fifa 19** | ✓         |
+| **Fifa 20** | ✓         |
+| **Fifa 21** | ✓         |
 
-_Note: Soccerway is taking data from multiple pages, so it takes longer period of time. The reason is to prevent rare limit (30 sec on average). Fotbalunas uses redirect. It means that data are downloded from 2 pages and there is also a little delay._
+## Supported tables
+
+| Table                  | Supported |
+| ---------------------- | --------- |
+| **competition**        | ✓         |
+| **dcplayernames**      | ✓         |
+| **formations**         | ✓         |
+| **leaguerefereelinks** | ✓         |
+| **leagues**            | ✓         |
+| **leagueteamlinks**    | ✓         |
+| **manager**            | ✓         |
+| **nations**            | ✓         |
+| **playerboots**        | ✓         |
+| **player_grudgelove**  | ✓         |
+| **playerloans**        | ✓         |
+| **playernames**        | ✓         |
+| **players**            | ✓         |
+| **previousteam**       | ✓         |
+| **referee**            | ✓         |
+| **rivals**             | ✓         |
+| **rowteamnationlinks** | ✓         |
+| **shoecolors**         | ✓         |
+| **stadiums**           | ✓         |
+| **teamballs**          | ✓         |
+| **teamkits**           | ✓         |
+| **teamnationlinks**    | ✓         |
+| **teamplayerlinks**    | ✓         |
+| **teams**              | ✓         |
+| **teamstadiumlinks**   | ✓         |
 
 ## License
 
