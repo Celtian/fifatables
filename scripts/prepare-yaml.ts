@@ -15,7 +15,7 @@ if(!fifa) {
 }
 
 const inputFolder = join(cwd(), 'examples', fifa);
-const outputFolder = join(cwd(), 'cfg', fifa);
+const outputFolder = join(cwd(), 'cfg', 'fifa10');
 
 const read = (table: Table): Promise<Partial<Field>[]> => {
   const inputFile = join(inputFolder, `${table}.txt`);
@@ -80,7 +80,7 @@ const write = (table: Table, fields: Partial<Field>[]): void => {
 }
 
 const readAndWrite = async (table: Table): Promise<void> => {
-  console.log(`⚽⚽⚽ Processing: ${table} ⚽⚽⚽`);
+  console.log(`⚽ ${table}`);
   const fields = await read(table);
   write(table, fields);
 }
