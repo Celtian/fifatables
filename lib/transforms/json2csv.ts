@@ -1,6 +1,6 @@
 import { Transform, TransformCallback, TransformOptions } from 'stream';
-import { Datatype, Field, sortByOrder } from '../shared';
-
+import { sortByOrder } from '../shared/constants';
+import { Datatype, Field } from '../shared/interfaces';
 export interface Json2CsvTransformOptions extends TransformOptions {
   fields: Field[];
 }

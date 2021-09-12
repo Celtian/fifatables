@@ -1,5 +1,5 @@
 import { PassThrough } from 'stream';
-import { Datatype, Field } from '../../lib/shared';
+import { Datatype, Field } from '../../lib/shared/interfaces';
 import { Csv2JsonTransform } from '../../lib/transforms/csv2json';
 
 describe('Csv2JsonTransform', () => {

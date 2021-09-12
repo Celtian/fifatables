@@ -2,7 +2,7 @@ import { LineStream } from 'byline';
 import { createReadStream, createWriteStream, mkdirSync, WriteStream } from 'fs';
 import { decodeStream } from 'iconv-lite';
 import { join } from 'path';
-import { Field, Table } from '../shared';
+import { Field, Table } from '../shared/interfaces';
 import { Csv2JsonTransform } from '../transforms/csv2json';
 import { Json2CsvTransform } from '../transforms/json2csv';
 import { NewLineTransform } from '../transforms/new-line';

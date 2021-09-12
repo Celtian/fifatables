@@ -55,19 +55,7 @@ _Type this into your ts file._
 
 ## Supported versions of Fifa Soccer
 
-| Fifa        | Supported |
-| ----------- | --------- |
-| **Fifa 11** | ✓         |
-| **Fifa 12** | ✓         |
-| **Fifa 13** | ✓         |
-| **Fifa 14** | ✓         |
-| **Fifa 15** | ✓         |
-| **Fifa 16** | ✓         |
-| **Fifa 17** | ✓         |
-| **Fifa 18** | ✓         |
-| **Fifa 19** | ✓         |
-| **Fifa 20** | ✓         |
-| **Fifa 21** | ✓         |
+**Fifa 11 - Fifa 21**
 
 ## Supported tables
 
