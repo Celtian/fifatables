@@ -15,7 +15,7 @@ export const readCsvStream = (inputFolder: string, table: Table, fields: Field[]
   return createReadStream(inputFile)
     .pipe(decodeStream('utf16le'))
     .pipe(new LineStream({ keepEmptyLines: false }))
-    .pipe(new SkipTransform({ skip: 1 }))
+    .pipe(new SkipTransform({ count: 1 }))
     .pipe(new Csv2JsonTransform({ fields }));
 }
 

@@ -1,20 +1,20 @@
 import { Transform, TransformCallback, TransformOptions } from 'stream';
 
-export interface SkipTransformOptions extends TransformOptions {
+export interface HeadTransformOptions extends TransformOptions {
   count: number;
 }
 
-export class SkipTransform extends Transform {
+export class HeadTransform extends Transform {
   private line = 0;
-  private opts: SkipTransformOptions;
+  private opts: HeadTransformOptions;
 
-  constructor(opts?: SkipTransformOptions) {
+  constructor(opts?: HeadTransformOptions) {
     super(opts);
     this.opts = opts;
   }
 
   public _transform(chunk: Buffer, encoding: string, callback: TransformCallback): void {
-    if (this.opts.count && this.line < this.opts.count) {
+    if (this.opts.count && this.line >= this.opts.count) {
       this.line++;
       callback();
       return;

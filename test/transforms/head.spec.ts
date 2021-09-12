@@ -1,13 +1,13 @@
 import { PassThrough } from 'stream';
-import { SkipTransform } from '../../lib/transforms/skip';
+import { HeadTransform } from '../../lib/transforms/head';
 
-describe('SkipTransform', () => {
+describe('HeadTransform', () => {
   it('should return correct value', (done) => {
     const mockReadable = new PassThrough();
 
     mockReadable
-      .pipe(new SkipTransform({ count: 1 }))
-      .on('data', (chunk: Buffer) => expect(chunk.toString()).toEqual('line 1'))
+      .pipe(new HeadTransform({ count: 1 }))
+      .on('data', (chunk: Buffer) => expect(chunk.toString()).toEqual('line 0'))
       .on('finish',() => done());
 
     setTimeout(() => {
