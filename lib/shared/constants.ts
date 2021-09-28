@@ -1,13 +1,12 @@
 import { readFileSync } from 'fs';
 import { load } from 'js-yaml';
 import { join } from 'path';
-import { cwd } from 'process';
 import { Field, Fifa, FifaConfig, Table } from './interfaces';
 
 const readConfig = (fifa: Fifa, table: Table): Field[] => {
   let json: Field[] = [];
   try {
-    const yaml = readFileSync(join(cwd(), 'cfg', fifa, `${table}.yml`)).toString();
+    const yaml = readFileSync(join(__dirname, '..', 'cfg', fifa, `${table}.yml`)).toString();
     json = load(yaml) as Field[];
   } catch (e) {
     throw new Error('Unexpected error');

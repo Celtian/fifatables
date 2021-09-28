@@ -12,7 +12,7 @@ for (const file of copyFiles) {
 
 console.log('Copying configurations into dist.');
 
-const srcDir = join(cwd(), 'cfg');
+const srcDir = join(cwd(), 'lib', 'cfg');
 const destDir = join(cwd(), 'dist', 'cfg');
 
 copySync(srcDir, destDir);
