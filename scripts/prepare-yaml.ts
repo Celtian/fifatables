@@ -15,7 +15,7 @@ if(!fifa) {
 }
 
 const inputFolder = join(cwd(), 'examples', fifa);
-const outputFolder = join(cwd(), 'cfg', 'fifa10');
+const outputFolder = join(cwd(), 'lib', 'cfg', 'fifa10');
 
 const read = (table: Table): Promise<Partial<Field>[]> => {
   const inputFile = join(inputFolder, `${table}.txt`);
