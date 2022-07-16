@@ -9,13 +9,13 @@ import { HeadTransform } from '../lib/transforms/head';
 
 const fifa = process.argv[2];
 
-if(!fifa) {
+if (!fifa) {
   console.log('Missing argument. Use it like: "yarn prepare-yaml fifa22"');
   process.exit(1);
 }
 
 const inputFolder = join(cwd(), 'examples', fifa);
-const outputFolder = join(cwd(), 'lib', 'cfg', fifa);
+const outputFolder = join(cwd(), 'config', fifa);
 
 const read = (table: Table): Promise<Partial<Field>[]> => {
   const inputFile = join(inputFolder, `${table}.txt`);
@@ -23,7 +23,7 @@ const read = (table: Table): Promise<Partial<Field>[]> => {
   let columnNames: string[] = [];
   let columnTypes: Datatype[] = [];
   return new Promise((resolve, reject) => {
-    if(!existsSync(inputFile)) {
+    if (!existsSync(inputFile)) {
       resolve([]);
     } else {
       createReadStream(inputFile)
@@ -32,13 +32,13 @@ const read = (table: Table): Promise<Partial<Field>[]> => {
         .pipe(new HeadTransform({ count: 2 }))
         .on('data', (buffer: Buffer) => {
           const columns = buffer.toString().split(/\t/);
-          if(line === 0) {
+          if (line === 0) {
             columnNames = columns;
           } else {
             columnTypes = columns.map((col) => {
-              if(col.match(/^\d+$/)) {
+              if (col.match(/^\d+$/)) {
                 return Datatype.Int;
-              } else if(col.match(/^\d+[\.,]{1}\d+$/)) {
+              } else if (col.match(/^\d+[\.,]{1}\d+$/)) {
                 return Datatype.Float;
               } else {
                 return Datatype.String;
@@ -49,7 +49,7 @@ const read = (table: Table): Promise<Partial<Field>[]> => {
         })
         .on('finish', () => {
           const result: Partial<Field>[] = [];
-          if(columnNames.length === columnTypes.length) {
+          if (columnNames.length === columnTypes.length) {
             for (let index = 0; index < columnNames.length; index++) {
               const name = columnNames[index];
               const type = columnTypes[index];
@@ -71,7 +71,7 @@ const read = (table: Table): Promise<Partial<Field>[]> => {
 const write = (table: Table, fields: Partial<Field>[]): void => {
   const outputFile = join(outputFolder, `${table}.yml`);
   mkdirSync(dirname(outputFile), { recursive: true });
-  if(fields.length) {
+  if (fields.length) {
     const data = yaml.dump(fields as any);
     writeFileSync(outputFile, data);
   } else {

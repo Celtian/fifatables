@@ -1,7 +1,4 @@
 import { copyFileSync } from 'fs';
-import { copySync } from 'fs-extra';
-import { join } from 'path';
-import { cwd } from 'process';
 
 console.log('Copying README.ms & LICENSE & package.json into dist.');
 
@@ -10,9 +7,11 @@ for (const file of copyFiles) {
   copyFileSync(`./${file}`, `./dist/${file}`);
 }
 
+/*
 console.log('Copying configurations into dist.');
 
-const srcDir = join(cwd(), 'lib', 'cfg');
-const destDir = join(cwd(), 'dist', 'cfg');
+const srcDir = join(cwd(), 'lib', 'config');
+const destDir = join(cwd(), 'dist', 'config');
 
 copySync(srcDir, destDir);
+*/
