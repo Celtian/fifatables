@@ -1,18 +1,5 @@
-import { readFileSync } from 'fs';
-import { load } from 'js-yaml';
-import { join } from 'path';
+import { readConfig } from './config';
 import { Field, Fifa, FifaConfig, Table } from './interfaces';
-
-const readConfig = (fifa: Fifa, table: Table): Field[] => {
-  let json: Field[] = [];
-  try {
-    const yaml = readFileSync(join(__dirname, '..', 'cfg', fifa, `${table}.yml`)).toString();
-    json = load(yaml) as Field[];
-  } catch (e) {
-    throw new Error('Unexpected error');
-  }
-  return json;
-};
 
 export const fifaConfig = (fifa: Fifa): FifaConfig => {
   const config = new FifaConfig();
