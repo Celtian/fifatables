@@ -91,7 +91,7 @@ const generateConfig = (): void => {
     line.push('\n');
   }
 
-  line.push(`export const readConfig = (fifa: Fifa, table: Table): Field[] => {`);
+  line.push(`export const fifaTableConfig = (fifa: Fifa, table: Table): Field[] => {`);
   line.push('\tswitch (fifa) {')
   for (const fifa of Object.keys(Fifa)) {
     line.push(`\t\tcase Fifa.${fifa}:`);

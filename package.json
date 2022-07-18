@@ -1,7 +1,7 @@
 {
   "name": "fifatables",
   "version": "0.0.5",
-  "description": "Library for scraping soccer data from the internet",
+  "description": "Definition of Fifa Soccer Game tables",
   "main": "index.js",
   "scripts": {
     "start": "tsc -w",

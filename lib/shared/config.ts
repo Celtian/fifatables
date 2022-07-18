@@ -916,7 +916,7 @@ const readFifa21Table = (table: Table): Field[] => {
 }
 
 
-export const readConfig = (fifa: Fifa, table: Table): Field[] => {
+export const fifaTableConfig = (fifa: Fifa, table: Table): Field[] => {
 	switch (fifa) {
 		case Fifa.Fifa11:
 			return readFifa11Table(table)

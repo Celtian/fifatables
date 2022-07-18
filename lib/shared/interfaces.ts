@@ -60,8 +60,6 @@ export interface Field {
   unique?: boolean;
 }
 
-export type KeyValueFrequency = { [key: string]: string };
-
 export type RawData = { [key: string]: string | number };
 
 export class FifaConfig {
