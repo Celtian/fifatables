@@ -33,24 +33,19 @@ yarn add fifatables
 _Type this into your ts file._
 
 ```terminal
-  import { join } from 'path';
-  import { cwd } from 'process';
-  import { Fifa, fifaConfig, readCsvStream, Table, writeCsvStream } from 'fifatables';
+  import { Fifa, fifaConfig, fifaTableConfig, formatRawValue, sortByOrder, Table } from 'fifatables';
 
   // config class with table definitions for fifa 11
   console.log(fifaConfig(Fifa.Fifa11));
 
-  // read league.txt from Fifa 11
-  readCsvStream(join(cwd(), 'examples', Fifa.Fifa11), Table.Leagues, fifaConfig(Fifa.Fifa11).leagues)
-    .on('data', (buffer: Buffer) => console.log(JSON.parse(buffer.toString())))
-    .on('finish', () => console.log('Reading finished.'));
+  // read only config for single table
+  console.log(fifaTableConfig(Fifa.Fifa11, Table.Leagues));
 
-  // read league.txt from Fifa 11 and write it in Fifa 21 format
-  const table = Table.Leagues;
-  const readStream = readCsvStream(join(cwd(), 'examples', Fifa.Fifa11), table, fifaConfig(Fifa.Fifa11).leagues);
-  writeCsvStream(readStream, join(cwd(), 'output', Fifa.Fifa21), table, fifaConfig(Fifa.Fifa21).leagues)
-    .on('data', (buffer: Buffer) => console.log(JSON.parse(buffer.toString())))
-    .on('finish', () => console.log('Writing finished.'));
+  // sort config by order
+  console.log(fifaTableConfig(Fifa.Fifa11, Table.Leagues).sort(sortByOrder));
+
+  // convert string into correct datatype based on config
+  console.log(formatRawValue(fifaTableConfig(Fifa.Fifa11, Table.Leagues)[0], '2000'));
 ```
 
 ## Supported versions of Fifa Soccer
@@ -89,7 +84,7 @@ _Type this into your ts file._
 
 ## License
 
-Copyright &copy; 2021 [Dominik Hladik](https://github.com/Celtian)
+Copyright &copy; 2021 - 2022 [Dominik Hladik](https://github.com/Celtian)
 
 All contents are licensed under the [MIT license].
 

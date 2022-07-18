@@ -1,5 +1,5 @@
-import { sortByOrder } from '../../lib/shared/constants';
 import { Datatype, Field } from '../../lib/shared/interfaces';
+import { sortByOrder } from '../../lib/shared/utils';
 
 describe('sortByOrder', () => {
   it('should return correct value', () => {
@@ -18,7 +18,7 @@ describe('sortByOrder', () => {
       default: 80,
       range: { min: 50, max: 115 },
       unique: false
-     };
+    };
     expect(sortByOrder(a, b)).toEqual(-1);
     expect(sortByOrder(b, a)).toEqual(1);
     expect(sortByOrder(a, a)).toEqual(0);
