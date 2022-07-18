@@ -12,7 +12,7 @@
     "prepare-yaml": "ts-node --project scripts/tsconfig.ts-node.json scripts/prepare-yaml",
     "yaml-to-json": "ts-node --project scripts/tsconfig.ts-node.json scripts/yaml-to-json",
     "postbuild": "yarn copydist",
-    "husky:install": "husky install",
+    "prepare": "husky install",
     "gpr:setup": "ts-node --project scripts/tsconfig.ts-node.json scripts/gpr-setup",
     "version": "auto-changelog -p && git add CHANGELOG.md",
     "postversion": "git push && git push --follow-tags",
@@ -41,10 +41,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "dependencies": {
-    "byline": "^5.0.0",
-    "iconv-lite": "^0.6.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/byline": "^4.2.33",
     "@types/fs-extra": "^9.0.13",
