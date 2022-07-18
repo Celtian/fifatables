@@ -33,15 +33,19 @@ yarn add fifatables
 _Type this into your ts file._
 
 ```terminal
-  import { join } from 'path';
-  import { cwd } from 'process';
-  import { Fifa, fifaConfig, fifaTableConfig, Table } from 'fifatables';
+  import { Fifa, fifaConfig, fifaTableConfig, formatRawValue, sortByOrder, Table } from 'fifatables';
 
   // config class with table definitions for fifa 11
   console.log(fifaConfig(Fifa.Fifa11));
 
   // read only config for single table
   console.log(fifaTableConfig(Fifa.Fifa11, Table.Leagues));
+
+  // sort config by order
+  console.log(fifaTableConfig(Fifa.Fifa11, Table.Leagues).sort(sortByOrder));
+
+  // convert string into correct datatype based on config
+  console.log(formatRawValue(fifaTableConfig(Fifa.Fifa11, Table.Leagues)[0], '2000'));
 ```
 
 ## Supported versions of Fifa Soccer
