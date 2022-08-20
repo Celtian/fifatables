@@ -65,7 +65,7 @@
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 50
     },
     "default": 1
   },
@@ -75,7 +75,7 @@
     "type": "int",
     "range": {
       "min": 0,
-      "max": 19
+      "max": 50
     },
     "default": 0
   },
@@ -220,18 +220,8 @@
     "default": 0
   },
   {
-    "name": "animpenaltieskickstylecode",
-    "order": 22,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 2
-    },
-    "default": 0
-  },
-  {
     "name": "isretiring",
-    "order": 23,
+    "order": 22,
     "type": "int",
     "range": {
       "min": 0,
@@ -241,7 +231,7 @@
   },
   {
     "name": "longshots",
-    "order": 24,
+    "order": 23,
     "type": "int",
     "range": {
       "min": 1,
@@ -251,7 +241,7 @@
   },
   {
     "name": "gkdiving",
-    "order": 25,
+    "order": 24,
     "type": "int",
     "range": {
       "min": 1,
@@ -261,7 +251,7 @@
   },
   {
     "name": "interceptions",
-    "order": 26,
+    "order": 25,
     "type": "int",
     "range": {
       "min": 1,
@@ -271,7 +261,7 @@
   },
   {
     "name": "shoecolorcode2",
-    "order": 27,
+    "order": 26,
     "type": "int",
     "range": {
       "min": 0,
@@ -281,7 +271,7 @@
   },
   {
     "name": "crossing",
-    "order": 28,
+    "order": 27,
     "type": "int",
     "range": {
       "min": 1,
@@ -291,7 +281,7 @@
   },
   {
     "name": "potential",
-    "order": 29,
+    "order": 28,
     "type": "int",
     "range": {
       "min": 1,
@@ -301,7 +291,7 @@
   },
   {
     "name": "gkreflexes",
-    "order": 30,
+    "order": 29,
     "type": "int",
     "range": {
       "min": 1,
@@ -311,7 +301,7 @@
   },
   {
     "name": "finishingcode1",
-    "order": 31,
+    "order": 30,
     "type": "int",
     "range": {
       "min": 0,
@@ -321,7 +311,7 @@
   },
   {
     "name": "reactions",
-    "order": 32,
+    "order": 31,
     "type": "int",
     "range": {
       "min": 1,
@@ -331,7 +321,7 @@
   },
   {
     "name": "composure",
-    "order": 33,
+    "order": 32,
     "type": "int",
     "range": {
       "min": 1,
@@ -341,7 +331,7 @@
   },
   {
     "name": "vision",
-    "order": 34,
+    "order": 33,
     "type": "int",
     "range": {
       "min": 1,
@@ -351,7 +341,7 @@
   },
   {
     "name": "contractvaliduntil",
-    "order": 35,
+    "order": 34,
     "type": "int",
     "range": {
       "min": 0,
@@ -360,18 +350,8 @@
     "default": 2020
   },
   {
-    "name": "animpenaltiesapproachcode",
-    "order": 36,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 2
-    },
-    "default": 0
-  },
-  {
     "name": "finishing",
-    "order": 37,
+    "order": 35,
     "type": "int",
     "range": {
       "min": 0,
@@ -381,7 +361,7 @@
   },
   {
     "name": "dribbling",
-    "order": 38,
+    "order": 36,
     "type": "int",
     "range": {
       "min": 1,
@@ -391,7 +371,7 @@
   },
   {
     "name": "slidingtackle",
-    "order": 39,
+    "order": 37,
     "type": "int",
     "range": {
       "min": 1,
@@ -401,7 +381,7 @@
   },
   {
     "name": "accessorycode3",
-    "order": 40,
+    "order": 38,
     "type": "int",
     "range": {
       "min": 0,
@@ -411,7 +391,7 @@
   },
   {
     "name": "accessorycolourcode1",
-    "order": 41,
+    "order": 39,
     "type": "int",
     "range": {
       "min": 0,
@@ -421,7 +401,7 @@
   },
   {
     "name": "headtypecode",
-    "order": 42,
+    "order": 40,
     "type": "int",
     "range": {
       "min": 0,
@@ -430,8 +410,18 @@
     "default": 0
   },
   {
+    "name": "driref",
+    "order": 41,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
     "name": "sprintspeed",
-    "order": 43,
+    "order": 42,
     "type": "int",
     "range": {
       "min": 1,
@@ -441,7 +431,7 @@
   },
   {
     "name": "height",
-    "order": 44,
+    "order": 43,
     "type": "int",
     "range": {
       "min": 130,
@@ -451,7 +441,7 @@
   },
   {
     "name": "hasseasonaljersey",
-    "order": 45,
+    "order": 44,
     "type": "int",
     "range": {
       "min": 0,
@@ -461,7 +451,7 @@
   },
   {
     "name": "tattoohead",
-    "order": 46,
+    "order": 45,
     "type": "int",
     "range": {
       "min": 0,
@@ -471,7 +461,7 @@
   },
   {
     "name": "preferredposition2",
-    "order": 47,
+    "order": 46,
     "type": "int",
     "range": {
       "min": -1,
@@ -481,7 +471,7 @@
   },
   {
     "name": "strength",
-    "order": 48,
+    "order": 47,
     "type": "int",
     "range": {
       "min": 1,
@@ -491,7 +481,7 @@
   },
   {
     "name": "shoetypecode",
-    "order": 49,
+    "order": 48,
     "type": "int",
     "range": {
       "min": 0,
@@ -501,7 +491,7 @@
   },
   {
     "name": "birthdate",
-    "order": 50,
+    "order": 49,
     "type": "int",
     "range": {
       "min": 0,
@@ -511,7 +501,7 @@
   },
   {
     "name": "preferredposition1",
-    "order": 51,
+    "order": 50,
     "type": "int",
     "range": {
       "min": 0,
@@ -521,7 +511,7 @@
   },
   {
     "name": "tattooleftleg",
-    "order": 52,
+    "order": 51,
     "type": "int",
     "range": {
       "min": 0,
@@ -531,6 +521,16 @@
   },
   {
     "name": "ballcontrol",
+    "order": 52,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "phypos",
     "order": 53,
     "type": "int",
     "range": {
@@ -650,24 +650,24 @@
     "default": 50
   },
   {
-    "name": "internationalrep",
+    "name": "defspe",
     "order": 65,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "internationalrep",
+    "order": 66,
     "type": "int",
     "range": {
       "min": 1,
       "max": 5
     },
     "default": 1
-  },
-  {
-    "name": "animpenaltiesmotionstylecode",
-    "order": 66,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 6
-    },
-    "default": 0
   },
   {
     "name": "shortpassing",
@@ -770,7 +770,7 @@
     "default": 50
   },
   {
-    "name": "headingaccuracy",
+    "name": "paskic",
     "order": 77,
     "type": "int",
     "range": {
@@ -780,8 +780,18 @@
     "default": 50
   },
   {
-    "name": "iscustomized",
+    "name": "headingaccuracy",
     "order": 78,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "iscustomized",
+    "order": 79,
     "type": "int",
     "range": {
       "min": 0,
@@ -791,7 +801,7 @@
   },
   {
     "name": "eyebrowcode",
-    "order": 79,
+    "order": 80,
     "type": "int",
     "range": {
       "min": 0,
@@ -801,7 +811,7 @@
   },
   {
     "name": "runningcode2",
-    "order": 80,
+    "order": 81,
     "type": "int",
     "range": {
       "min": 0,
@@ -811,7 +821,7 @@
   },
   {
     "name": "modifier",
-    "order": 81,
+    "order": 82,
     "type": "int",
     "range": {
       "min": -5,
@@ -821,7 +831,7 @@
   },
   {
     "name": "gkhandling",
-    "order": 82,
+    "order": 83,
     "type": "int",
     "range": {
       "min": 1,
@@ -831,7 +841,7 @@
   },
   {
     "name": "eyecolorcode",
-    "order": 83,
+    "order": 84,
     "type": "int",
     "range": {
       "min": 1,
@@ -841,7 +851,7 @@
   },
   {
     "name": "jerseysleevelengthcode",
-    "order": 84,
+    "order": 85,
     "type": "int",
     "range": {
       "min": 0,
@@ -851,7 +861,7 @@
   },
   {
     "name": "accessorycolourcode3",
-    "order": 85,
+    "order": 86,
     "type": "int",
     "range": {
       "min": 0,
@@ -861,7 +871,7 @@
   },
   {
     "name": "accessorycode1",
-    "order": 86,
+    "order": 87,
     "type": "int",
     "range": {
       "min": 0,
@@ -871,7 +881,7 @@
   },
   {
     "name": "playerjointeamdate",
-    "order": 87,
+    "order": 88,
     "type": "int",
     "range": {
       "min": 0,
@@ -881,7 +891,7 @@
   },
   {
     "name": "headclasscode",
-    "order": 88,
+    "order": 89,
     "type": "int",
     "range": {
       "min": 0,
@@ -891,7 +901,7 @@
   },
   {
     "name": "defensiveworkrate",
-    "order": 89,
+    "order": 90,
     "type": "int",
     "range": {
       "min": 0,
@@ -901,7 +911,7 @@
   },
   {
     "name": "tattoofront",
-    "order": 90,
+    "order": 91,
     "type": "int",
     "range": {
       "min": 0,
@@ -911,7 +921,7 @@
   },
   {
     "name": "nationality",
-    "order": 91,
+    "order": 92,
     "type": "int",
     "range": {
       "min": 0,
@@ -921,7 +931,7 @@
   },
   {
     "name": "preferredfoot",
-    "order": 92,
+    "order": 93,
     "type": "int",
     "range": {
       "min": 1,
@@ -931,7 +941,7 @@
   },
   {
     "name": "sideburnscode",
-    "order": 93,
+    "order": 94,
     "type": "int",
     "range": {
       "min": 0,
@@ -941,7 +951,7 @@
   },
   {
     "name": "weakfootabilitytypecode",
-    "order": 94,
+    "order": 95,
     "type": "int",
     "range": {
       "min": 1,
@@ -951,7 +961,7 @@
   },
   {
     "name": "jumping",
-    "order": 95,
+    "order": 96,
     "type": "int",
     "range": {
       "min": 1,
@@ -961,7 +971,7 @@
   },
   {
     "name": "personality",
-    "order": 96,
+    "order": 97,
     "type": "int",
     "range": {
       "min": 1,
@@ -971,7 +981,7 @@
   },
   {
     "name": "gkkickstyle",
-    "order": 97,
+    "order": 98,
     "type": "int",
     "range": {
       "min": 0,
@@ -981,7 +991,7 @@
   },
   {
     "name": "stamina",
-    "order": 98,
+    "order": 99,
     "type": "int",
     "range": {
       "min": 1,
@@ -991,7 +1001,7 @@
   },
   {
     "name": "playerid",
-    "order": 99,
+    "order": 100,
     "type": "int",
     "range": {
       "min": 0,
@@ -1002,7 +1012,7 @@
   },
   {
     "name": "marking",
-    "order": 100,
+    "order": 101,
     "type": "int",
     "range": {
       "min": 1,
@@ -1012,7 +1022,7 @@
   },
   {
     "name": "accessorycolourcode4",
-    "order": 101,
+    "order": 102,
     "type": "int",
     "range": {
       "min": 0,
@@ -1022,7 +1032,7 @@
   },
   {
     "name": "gkpositioning",
-    "order": 102,
+    "order": 103,
     "type": "int",
     "range": {
       "min": 1,
@@ -1032,7 +1042,7 @@
   },
   {
     "name": "headvariation",
-    "order": 103,
+    "order": 104,
     "type": "int",
     "range": {
       "min": 0,
@@ -1042,7 +1052,7 @@
   },
   {
     "name": "skillmoveslikelihood",
-    "order": 104,
+    "order": 105,
     "type": "int",
     "range": {
       "min": 0,
@@ -1051,8 +1061,18 @@
     "default": 0
   },
   {
+    "name": "shohan",
+    "order": 106,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
     "name": "skintonecode",
-    "order": 105,
+    "order": 107,
     "type": "int",
     "range": {
       "min": 1,
@@ -1062,7 +1082,7 @@
   },
   {
     "name": "shortstyle",
-    "order": 106,
+    "order": 108,
     "type": "int",
     "range": {
       "min": 0,
@@ -1072,7 +1092,7 @@
   },
   {
     "name": "overallrating",
-    "order": 107,
+    "order": 109,
     "type": "int",
     "range": {
       "min": 1,
@@ -1082,7 +1102,7 @@
   },
   {
     "name": "smallsidedshoetypecode",
-    "order": 108,
+    "order": 110,
     "type": "int",
     "range": {
       "min": 0,
@@ -1092,7 +1112,7 @@
   },
   {
     "name": "emotion",
-    "order": 109,
+    "order": 111,
     "type": "int",
     "range": {
       "min": 1,
@@ -1102,7 +1122,7 @@
   },
   {
     "name": "runstylecode",
-    "order": 110,
+    "order": 112,
     "type": "int",
     "range": {
       "min": 0,
@@ -1112,7 +1132,7 @@
   },
   {
     "name": "jerseyfit",
-    "order": 111,
+    "order": 113,
     "type": "int",
     "range": {
       "min": 0,
@@ -1122,7 +1142,7 @@
   },
   {
     "name": "accessorycode2",
-    "order": 112,
+    "order": 114,
     "type": "int",
     "range": {
       "min": 0,
@@ -1132,7 +1152,7 @@
   },
   {
     "name": "shoedesigncode",
-    "order": 113,
+    "order": 115,
     "type": "int",
     "range": {
       "min": 0,
@@ -1142,7 +1162,7 @@
   },
   {
     "name": "shoecolorcode1",
-    "order": 114,
+    "order": 116,
     "type": "int",
     "range": {
       "min": 0,
@@ -1152,7 +1172,7 @@
   },
   {
     "name": "hairstylecode",
-    "order": 115,
+    "order": 117,
     "type": "int",
     "range": {
       "min": 0,
@@ -1162,7 +1182,7 @@
   },
   {
     "name": "bodytypecode",
-    "order": 116,
+    "order": 118,
     "type": "int",
     "range": {
       "min": 1,
@@ -1172,7 +1192,7 @@
   },
   {
     "name": "animpenaltiesstartposcode",
-    "order": 117,
+    "order": 119,
     "type": "int",
     "range": {
       "min": 0,
@@ -1181,27 +1201,7 @@
     "default": 0
   },
   {
-    "name": "runningcode1",
-    "order": 118,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 100000
-    },
-    "default": 0
-  },
-  {
-    "name": "preferredposition4",
-    "order": 119,
-    "type": "int",
-    "range": {
-      "min": -1,
-      "max": 32
-    },
-    "default": -1
-  },
-  {
-    "name": "volleys",
+    "name": "pacdiv",
     "order": 120,
     "type": "int",
     "range": {
@@ -1211,8 +1211,38 @@
     "default": 50
   },
   {
-    "name": "accessorycolourcode2",
+    "name": "runningcode1",
     "order": 121,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 100000
+    },
+    "default": 0
+  },
+  {
+    "name": "preferredposition4",
+    "order": 122,
+    "type": "int",
+    "range": {
+      "min": -1,
+      "max": 32
+    },
+    "default": -1
+  },
+  {
+    "name": "volleys",
+    "order": 123,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "accessorycolourcode2",
+    "order": 124,
     "type": "int",
     "range": {
       "min": 0,
@@ -1222,7 +1252,7 @@
   },
   {
     "name": "tattoorightleg",
-    "order": 122,
+    "order": 125,
     "type": "int",
     "range": {
       "min": 0,
@@ -1232,7 +1262,7 @@
   },
   {
     "name": "facialhaircolorcode",
-    "order": 123,
+    "order": 126,
     "type": "int",
     "range": {
       "min": 0,

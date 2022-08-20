@@ -27,8 +27,7 @@
       "min": 0,
       "max": 9999999
     },
-    "default": 1,
-    "unique": true
+    "default": 1
   },
   {
     "name": "competitioncolor2r",
@@ -151,18 +150,8 @@
     "default": -1
   },
   {
-    "name": "ballid",
-    "order": 15,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 255
-    },
-    "default": 0
-  },
-  {
     "name": "goalscoringrecord",
-    "order": 16,
+    "order": 15,
     "type": "int",
     "range": {
       "min": 0,
@@ -172,7 +161,7 @@
   },
   {
     "name": "hasmediarope",
-    "order": 17,
+    "order": 16,
     "type": "int",
     "range": {
       "min": 0,
@@ -182,7 +171,7 @@
   },
   {
     "name": "celebrationmediapen",
-    "order": 18,
+    "order": 17,
     "type": "int",
     "range": {
       "min": 0,
@@ -192,7 +181,7 @@
   },
   {
     "name": "isteampitchflagenabledstage",
-    "order": 19,
+    "order": 18,
     "type": "int",
     "range": {
       "min": 0,
@@ -202,7 +191,7 @@
   },
   {
     "name": "isstanchionflamethrowerenabledstage",
-    "order": 20,
+    "order": 19,
     "type": "int",
     "range": {
       "min": 0,
@@ -212,7 +201,7 @@
   },
   {
     "name": "celebrationsponsorboard",
-    "order": 21,
+    "order": 20,
     "type": "int",
     "range": {
       "min": 0,
@@ -222,17 +211,17 @@
   },
   {
     "name": "winterballid",
-    "order": 22,
+    "order": 21,
     "type": "int",
     "range": {
       "min": -1,
-      "max": 255
+      "max": 300
     },
     "default": -1
   },
   {
     "name": "goaljingle",
-    "order": 23,
+    "order": 22,
     "type": "int",
     "range": {
       "min": 0,
@@ -242,7 +231,7 @@
   },
   {
     "name": "isstadiumdressingenabledstage",
-    "order": 24,
+    "order": 23,
     "type": "int",
     "range": {
       "min": 0,
@@ -252,7 +241,7 @@
   },
   {
     "name": "isgoallinetechcompenabledstage",
-    "order": 25,
+    "order": 24,
     "type": "int",
     "range": {
       "min": 0,
@@ -262,7 +251,7 @@
   },
   {
     "name": "abbapenalties",
-    "order": 26,
+    "order": 25,
     "type": "int",
     "range": {
       "min": 0,
@@ -272,7 +261,7 @@
   },
   {
     "name": "hasvikingclap",
-    "order": 27,
+    "order": 26,
     "type": "int",
     "range": {
       "min": 0,
@@ -282,7 +271,7 @@
   },
   {
     "name": "competitionimportance",
-    "order": 28,
+    "order": 27,
     "type": "int",
     "range": {
       "min": 0,
@@ -292,17 +281,17 @@
   },
   {
     "name": "finalballid",
-    "order": 29,
+    "order": 28,
     "type": "int",
     "range": {
       "min": -1,
-      "max": 255
+      "max": 300
     },
     "default": -1
   },
   {
     "name": "presassettwo",
-    "order": 30,
+    "order": 29,
     "type": "int",
     "range": {
       "min": 0,
@@ -312,7 +301,7 @@
   },
   {
     "name": "adboardplacement",
-    "order": 31,
+    "order": 30,
     "type": "int",
     "range": {
       "min": 0,
@@ -322,11 +311,21 @@
   },
   {
     "name": "iscompetitionscarfenabled",
-    "order": 32,
+    "order": 31,
     "type": "int",
     "range": {
       "min": 0,
       "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "authentictarpadboardb",
+    "order": 32,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 16
     },
     "default": 0
   },
@@ -471,8 +470,18 @@
     "default": 0
   },
   {
-    "name": "iscenterpitchflagenabledstage",
+    "name": "hasmascot",
     "order": 47,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "iscenterpitchflagenabledstage",
+    "order": 48,
     "type": "int",
     "range": {
       "min": 0,
@@ -482,7 +491,7 @@
   },
   {
     "name": "iscompetitioncrowdcardsenabled",
-    "order": 48,
+    "order": 49,
     "type": "int",
     "range": {
       "min": 0,
@@ -492,7 +501,7 @@
   },
   {
     "name": "player_display_pts",
-    "order": 49,
+    "order": 50,
     "type": "int",
     "range": {
       "min": 0,
@@ -502,7 +511,7 @@
   },
   {
     "name": "isarchwayenabled",
-    "order": 50,
+    "order": 51,
     "type": "int",
     "range": {
       "min": 0,
@@ -512,7 +521,7 @@
   },
   {
     "name": "isgoallinetechcompenabled",
-    "order": 51,
+    "order": 52,
     "type": "int",
     "range": {
       "min": 0,
@@ -522,7 +531,7 @@
   },
   {
     "name": "authenticwipe",
-    "order": 52,
+    "order": 53,
     "type": "int",
     "range": {
       "min": 0,
@@ -532,7 +541,7 @@
   },
   {
     "name": "replay360degree",
-    "order": 53,
+    "order": 54,
     "type": "int",
     "range": {
       "min": 0,
@@ -542,7 +551,7 @@
   },
   {
     "name": "isuniquetrophypedestalenabled",
-    "order": 54,
+    "order": 55,
     "type": "int",
     "range": {
       "min": 0,
@@ -552,16 +561,6 @@
   },
   {
     "name": "custombibs",
-    "order": 55,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 1
-    },
-    "default": 0
-  },
-  {
-    "name": "isinjuryboardenabled",
     "order": 56,
     "type": "int",
     "range": {
@@ -571,8 +570,18 @@
     "default": 0
   },
   {
-    "name": "isintroconfettienabledstage",
+    "name": "isinjuryboardenabled",
     "order": 57,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "isintroconfettienabledstage",
+    "order": 58,
     "type": "int",
     "range": {
       "min": 0,
@@ -582,7 +591,7 @@
   },
   {
     "name": "inflatables",
-    "order": 58,
+    "order": 59,
     "type": "int",
     "range": {
       "min": 0,
@@ -592,7 +601,7 @@
   },
   {
     "name": "player_display_ptw_tr",
-    "order": 59,
+    "order": 60,
     "type": "int",
     "range": {
       "min": 0,
@@ -602,7 +611,7 @@
   },
   {
     "name": "isstadiumdressingunique",
-    "order": 60,
+    "order": 61,
     "type": "int",
     "range": {
       "min": 0,
@@ -612,7 +621,7 @@
   },
   {
     "name": "isvanishingsprayhomeenabled",
-    "order": 61,
+    "order": 62,
     "type": "int",
     "range": {
       "min": 0,
@@ -622,7 +631,7 @@
   },
   {
     "name": "isflamethrowercannonsenabledstage",
-    "order": 62,
+    "order": 63,
     "type": "int",
     "range": {
       "min": 0,
@@ -631,17 +640,7 @@
     "default": 9
   },
   {
-    "name": "isvanishingsprayenabled",
-    "order": 63,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 1
-  },
-  {
-    "name": "stanchionflamethrower",
+    "name": "hasauthentictarpads",
     "order": 64,
     "type": "int",
     "range": {
@@ -651,8 +650,28 @@
     "default": 0
   },
   {
-    "name": "has_var",
+    "name": "isvanishingsprayenabled",
     "order": 65,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 15
+    },
+    "default": 1
+  },
+  {
+    "name": "stanchionflamethrower",
+    "order": 66,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "has_var",
+    "order": 67,
     "type": "int",
     "range": {
       "min": 0,
@@ -662,7 +681,7 @@
   },
   {
     "name": "languageregion",
-    "order": 66,
+    "order": 68,
     "type": "int",
     "range": {
       "min": 1,
@@ -672,26 +691,6 @@
   },
   {
     "name": "ispitchtarpsenabledstage",
-    "order": 67,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 9
-  },
-  {
-    "name": "celebrationbackboard",
-    "order": 68,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 2
-    },
-    "default": 0
-  },
-  {
-    "name": "adboardplacementstage",
     "order": 69,
     "type": "int",
     "range": {
@@ -701,17 +700,17 @@
     "default": 9
   },
   {
-    "name": "isstadiumdressinguniquestage",
+    "name": "celebrationbackboard",
     "order": 70,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 2
     },
-    "default": 9
+    "default": 0
   },
   {
-    "name": "iscenterpitchflagenabled",
+    "name": "adboardplacementstage",
     "order": 71,
     "type": "int",
     "range": {
@@ -721,8 +720,38 @@
     "default": 9
   },
   {
-    "name": "pitchbranding",
+    "name": "isstadiumdressinguniquestage",
     "order": 72,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 15
+    },
+    "default": 9
+  },
+  {
+    "name": "iscenterpitchflagenabled",
+    "order": 73,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 15
+    },
+    "default": 9
+  },
+  {
+    "name": "crowdregion",
+    "order": 74,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 31
+    },
+    "default": 0
+  },
+  {
+    "name": "pitchbranding",
+    "order": 75,
     "type": "int",
     "range": {
       "min": 0,
@@ -732,7 +761,7 @@
   },
   {
     "name": "isgoallinetechhomeleagueenabled",
-    "order": 73,
+    "order": 76,
     "type": "int",
     "range": {
       "min": 0,
@@ -742,36 +771,6 @@
   },
   {
     "name": "stadiumcrowdmap",
-    "order": 74,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 0
-  },
-  {
-    "name": "celebrationstage",
-    "order": 75,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 2
-    },
-    "default": 1
-  },
-  {
-    "name": "celebrationarchedboard",
-    "order": 76,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 2
-    },
-    "default": 0
-  },
-  {
-    "name": "isballplinthenabled",
     "order": 77,
     "type": "int",
     "range": {
@@ -781,8 +780,58 @@
     "default": 0
   },
   {
-    "name": "introteamportrait",
+    "name": "ballid",
     "order": 78,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 300
+    },
+    "default": 0
+  },
+  {
+    "name": "celebrationstage",
+    "order": 79,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 2
+    },
+    "default": 1
+  },
+  {
+    "name": "authentictarpadboarda",
+    "order": 80,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 16
+    },
+    "default": 0
+  },
+  {
+    "name": "celebrationarchedboard",
+    "order": 81,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 2
+    },
+    "default": 0
+  },
+  {
+    "name": "isballplinthenabled",
+    "order": 82,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 15
+    },
+    "default": 0
+  },
+  {
+    "name": "introteamportrait",
+    "order": 83,
     "type": "int",
     "range": {
       "min": 0,
@@ -792,7 +841,7 @@
   },
   {
     "name": "onpitchgraphics",
-    "order": 79,
+    "order": 84,
     "type": "int",
     "range": {
       "min": 0,
@@ -802,7 +851,7 @@
   },
   {
     "name": "crowdskintonecode",
-    "order": 80,
+    "order": 85,
     "type": "int",
     "range": {
       "min": 0,
@@ -812,7 +861,7 @@
   },
   {
     "name": "competitionchampionid",
-    "order": 81,
+    "order": 86,
     "type": "int",
     "range": {
       "min": -1,
@@ -821,8 +870,18 @@
     "default": -1
   },
   {
+    "name": "haslargeflag",
+    "order": 87,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
     "name": "isarchwayenabledstage",
-    "order": 82,
+    "order": 88,
     "type": "int",
     "range": {
       "min": 0,
@@ -832,7 +891,7 @@
   },
   {
     "name": "isgoalnetadsenabledstage",
-    "order": 83,
+    "order": 89,
     "type": "int",
     "range": {
       "min": 0,
@@ -842,7 +901,7 @@
   },
   {
     "name": "isstadiumdressingenabled",
-    "order": 84,
+    "order": 90,
     "type": "int",
     "range": {
       "min": 0,
@@ -852,7 +911,7 @@
   },
   {
     "name": "goalnetads",
-    "order": 85,
+    "order": 91,
     "type": "int",
     "range": {
       "min": 0,

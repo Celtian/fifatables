@@ -22,7 +22,7 @@
   range:
     min: 1
     max: 7
-  default: 1
+  default: 7
 - name: iscompetitionscarfenabled
   order: 4
   type: int

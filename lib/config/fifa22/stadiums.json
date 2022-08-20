@@ -1,6 +1,6 @@
 [
   {
-    "name": "competitioncolor1g",
+    "name": "goalnetstanchioncolor2g",
     "order": 0,
     "type": "int",
     "range": {
@@ -10,28 +10,27 @@
     "default": 0
   },
   {
-    "name": "badge_ls",
+    "name": "goalnetstanchioncolor2r",
     "order": 1,
     "type": "int",
     "range": {
-      "min": -1,
-      "max": 9999999
+      "min": 0,
+      "max": 255
     },
-    "default": -1
+    "default": 0
   },
   {
-    "name": "competitionid",
+    "name": "goalnetstanchioncolor1b",
     "order": 2,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 9999999
+      "max": 255
     },
-    "default": 1,
-    "unique": true
+    "default": 0
   },
   {
-    "name": "competitioncolor2r",
+    "name": "goalnetstanchioncolor2b",
     "order": 3,
     "type": "int",
     "range": {
@@ -41,7 +40,7 @@
     "default": 0
   },
   {
-    "name": "competitioncolor2g",
+    "name": "goalnetstanchioncolor1r",
     "order": 4,
     "type": "int",
     "range": {
@@ -51,8 +50,14 @@
     "default": 0
   },
   {
-    "name": "competitioncolor1b",
+    "name": "name",
     "order": 5,
+    "type": "string",
+    "default": ""
+  },
+  {
+    "name": "goalnetstanchioncolor1g",
+    "order": 6,
     "type": "int",
     "range": {
       "min": 0,
@@ -61,247 +66,237 @@
     "default": 0
   },
   {
-    "name": "badge_rs",
-    "order": 6,
-    "type": "int",
-    "range": {
-      "min": -1,
-      "max": 9999999
-    },
-    "default": -1
-  },
-  {
-    "name": "competitioncolor1r",
+    "name": "timeofday3",
     "order": 7,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 255
+      "max": 5
     },
-    "default": 0
+    "default": 5
   },
   {
-    "name": "competitioncolor2b",
+    "name": "adboardsidelinedistance",
     "order": 8,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 255
+      "max": 999999
+    },
+    "default": 400
+  },
+  {
+    "name": "stadiumgloalnetdepth",
+    "order": 9,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 999999
+    },
+    "default": 229
+  },
+  {
+    "name": "hometeamid",
+    "order": 10,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 200000
     },
     "default": 0
   },
   {
-    "name": "badge_chest_champions",
-    "order": 9,
-    "type": "int",
-    "range": {
-      "min": -1,
-      "max": 9999999
-    },
-    "default": -1
-  },
-  {
-    "name": "badge_ls_champions",
-    "order": 10,
-    "type": "int",
-    "range": {
-      "min": -1,
-      "max": 9999999
-    },
-    "default": -1
-  },
-  {
-    "name": "armband_type_1",
+    "name": "presassetfour",
     "order": 11,
     "type": "int",
     "range": {
-      "min": -1,
-      "max": 9999999
+      "min": 0,
+      "max": 1
     },
-    "default": -1
+    "default": 0
   },
   {
-    "name": "badge_chest",
+    "name": "presassetone",
     "order": 12,
     "type": "int",
     "range": {
-      "min": -1,
-      "max": 9999999
+      "min": 0,
+      "max": 1
     },
-    "default": -1
+    "default": 0
   },
   {
-    "name": "badge_rs_champions",
+    "name": "issmallsided",
     "order": 13,
     "type": "int",
     "range": {
-      "min": -1,
-      "max": 9999999
+      "min": 0,
+      "max": 1
     },
-    "default": -1
+    "default": 0
   },
   {
-    "name": "armband_type_0",
+    "name": "supportsgoalnetshape",
     "order": 14,
     "type": "int",
     "range": {
-      "min": -1,
-      "max": 9999999
+      "min": 0,
+      "max": 1
     },
-    "default": -1
+    "default": 0
   },
   {
-    "name": "ballid",
+    "name": "capacity",
     "order": 15,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 255
+      "max": 200000
     },
-    "default": 0
+    "default": 10000
   },
   {
-    "name": "goalscoringrecord",
+    "name": "seatcolor",
     "order": 16,
     "type": "int",
     "range": {
-      "min": 0,
-      "max": 200
+      "min": 1,
+      "max": 8
     },
-    "default": 0
+    "default": 1
   },
   {
-    "name": "hasmediarope",
+    "name": "sectionfacedbydefault",
     "order": 17,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 2
+      "max": 1
     },
     "default": 0
   },
   {
-    "name": "celebrationmediapen",
+    "name": "stadhometechzonemaxz",
     "order": 18,
     "type": "int",
     "range": {
-      "min": 0,
-      "max": 1
+      "min": -65536,
+      "max": 65535
     },
-    "default": 1
+    "default": -3600
   },
   {
-    "name": "isteampitchflagenabledstage",
+    "name": "hasunofficialname",
     "order": 19,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 1
     },
-    "default": 9
+    "default": 0
   },
   {
-    "name": "isstanchionflamethrowerenabledstage",
+    "name": "pitchcolor",
     "order": 20,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 10
     },
-    "default": 9
+    "default": 0
   },
   {
-    "name": "celebrationsponsorboard",
+    "name": "policetypecode",
     "order": 21,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 2
+      "max": 15
     },
     "default": 1
   },
   {
-    "name": "winterballid",
+    "name": "timeofday4",
     "order": 22,
     "type": "int",
     "range": {
-      "min": -1,
-      "max": 255
+      "min": 0,
+      "max": 5
     },
-    "default": -1
+    "default": 5
   },
   {
-    "name": "goaljingle",
+    "name": "pitchwear",
     "order": 23,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 1
+      "max": 10
     },
     "default": 0
   },
   {
-    "name": "isstadiumdressingenabledstage",
+    "name": "stadawaytechzonemaxx",
     "order": 24,
     "type": "int",
     "range": {
-      "min": 0,
-      "max": 15
+      "min": -65536,
+      "max": 65535
     },
-    "default": 9
+    "default": 500
   },
   {
-    "name": "isgoallinetechcompenabledstage",
+    "name": "stadiumpitchlength",
     "order": 25,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 999999
     },
-    "default": 9
+    "default": 10500
   },
   {
-    "name": "abbapenalties",
+    "name": "stadiumgoalnetstyle",
     "order": 26,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 1
+      "max": 50
     },
     "default": 0
   },
   {
-    "name": "hasvikingclap",
+    "name": "gmavailability",
     "order": 27,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 1
-    },
-    "default": 0
-  },
-  {
-    "name": "competitionimportance",
-    "order": 28,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
+      "max": 3
     },
     "default": 1
   },
   {
-    "name": "finalballid",
+    "name": "cityid",
+    "order": 28,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1023
+    },
+    "default": 0
+  },
+  {
+    "name": "playsurfacetype",
     "order": 29,
     "type": "int",
     "range": {
-      "min": -1,
-      "max": 255
+      "min": 0,
+      "max": 7
     },
-    "default": -1
+    "default": 0
   },
   {
-    "name": "presassettwo",
+    "name": "pitchtarps",
     "order": 30,
     "type": "int",
     "range": {
@@ -311,98 +306,18 @@
     "default": 0
   },
   {
-    "name": "adboardplacement",
+    "name": "upgradetier",
     "order": 31,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 8
     },
     "default": 0
   },
   {
-    "name": "iscompetitionscarfenabled",
+    "name": "tod4weather",
     "order": 32,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 1
-    },
-    "default": 0
-  },
-  {
-    "name": "introanthemidle",
-    "order": 33,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 1
-    },
-    "default": 0
-  },
-  {
-    "name": "isbannerenabled",
-    "order": 34,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 1
-    },
-    "default": 1
-  },
-  {
-    "name": "pitchtarps",
-    "order": 35,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 5
-    },
-    "default": 0
-  },
-  {
-    "name": "ischampionboardenabled",
-    "order": 36,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 2
-    },
-    "default": 0
-  },
-  {
-    "name": "introconfetti",
-    "order": 37,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 1
-    },
-    "default": 0
-  },
-  {
-    "name": "colorregion",
-    "order": 38,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 31
-    },
-    "default": 1
-  },
-  {
-    "name": "isuniqueadboardscompenabled",
-    "order": 39,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 1
-    },
-    "default": 0
-  },
-  {
-    "name": "ishandshakeboardenabled",
-    "order": 40,
     "type": "int",
     "range": {
       "min": 0,
@@ -411,18 +326,18 @@
     "default": 0
   },
   {
-    "name": "country_lock",
-    "order": 41,
+    "name": "countrycode",
+    "order": 33,
     "type": "int",
     "range": {
-      "min": -1,
+      "min": 0,
       "max": 3000
     },
-    "default": -1
+    "default": 0
   },
   {
-    "name": "isballplinthenabledstage",
-    "order": 42,
+    "name": "stadiummowpattern_code",
+    "order": 34,
     "type": "int",
     "range": {
       "min": 0,
@@ -431,8 +346,99 @@
     "default": 0
   },
   {
-    "name": "hasstandingcrowd",
+    "name": "stadhometechzonemaxx",
+    "order": 35,
+    "type": "int",
+    "range": {
+      "min": -65536,
+      "max": 65535
+    },
+    "default": 0
+  },
+  {
+    "name": "colorregion",
+    "order": 36,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 31
+    },
+    "default": 0
+  },
+  {
+    "name": "defaultseason",
+    "order": 37,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 3
+    },
+    "default": 1
+  },
+  {
+    "name": "stadiumid",
+    "order": 38,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 2000
+    },
+    "default": 0,
+    "unique": true
+  },
+  {
+    "name": "tunnellocation",
+    "order": 39,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 2
+    },
+    "default": 0
+  },
+  {
+    "name": "cameraheight",
+    "order": 40,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 31
+    },
+    "default": 15
+  },
+  {
+    "name": "stadiumgoalpoststyle",
+    "order": 41,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 7
+    },
+    "default": 0
+  },
+  {
+    "name": "stadawaytechzoneminz",
+    "order": 42,
+    "type": "int",
+    "range": {
+      "min": -65536,
+      "max": 65535
+    },
+    "default": -3600
+  },
+  {
+    "name": "hasmexicanwave",
     "order": 43,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "hascenteradboard",
+    "order": 44,
     "type": "int",
     "range": {
       "min": 0,
@@ -441,57 +447,47 @@
     "default": 1
   },
   {
-    "name": "iscompetitionpoleflagenabled",
-    "order": 44,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 0
-  },
-  {
-    "name": "isteampitchflagenabled",
+    "name": "defaulttime",
     "order": 45,
     "type": "int",
     "range": {
-      "min": 0,
-      "max": 15
+      "min": 1000,
+      "max": 2345
     },
-    "default": 9
+    "default": 2000
   },
   {
-    "name": "isflamethrowercannonsenabled",
+    "name": "isstadiumavailable",
     "order": 46,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 1
+    },
+    "default": 1
+  },
+  {
+    "name": "stadhometechzoneminx",
+    "order": 47,
+    "type": "int",
+    "range": {
+      "min": -65536,
+      "max": 65535
     },
     "default": 0
   },
   {
-    "name": "iscenterpitchflagenabledstage",
-    "order": 47,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 9
-  },
-  {
-    "name": "iscompetitioncrowdcardsenabled",
+    "name": "ismirrored",
     "order": 48,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 1
     },
     "default": 0
   },
   {
-    "name": "player_display_pts",
+    "name": "stadiumgoalnettype",
     "order": 49,
     "type": "int",
     "range": {
@@ -501,38 +497,18 @@
     "default": 0
   },
   {
-    "name": "isarchwayenabled",
+    "name": "stadiumpitchwidth",
     "order": 50,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 999999
     },
-    "default": 0
-  },
-  {
-    "name": "isgoallinetechcompenabled",
-    "order": 51,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 9
-  },
-  {
-    "name": "authenticwipe",
-    "order": 52,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 3
-    },
-    "default": 1
+    "default": 6800
   },
   {
     "name": "replay360degree",
-    "order": 53,
+    "order": 51,
     "type": "int",
     "range": {
       "min": 0,
@@ -541,17 +517,37 @@
     "default": 0
   },
   {
-    "name": "isuniquetrophypedestalenabled",
-    "order": 54,
+    "name": "stadhometechzoneminz",
+    "order": 52,
     "type": "int",
     "range": {
-      "min": 0,
-      "max": 15
+      "min": -65536,
+      "max": 65535
     },
     "default": 0
   },
   {
-    "name": "custombibs",
+    "name": "inflatables",
+    "order": 53,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 8191
+    },
+    "default": 0
+  },
+  {
+    "name": "stadiumtype",
+    "order": 54,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 3
+    },
+    "default": 0
+  },
+  {
+    "name": "islicensed",
     "order": 55,
     "type": "int",
     "range": {
@@ -561,168 +557,138 @@
     "default": 0
   },
   {
-    "name": "isinjuryboardenabled",
+    "name": "tifo",
     "order": 56,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 1
+      "max": 4
     },
     "default": 0
   },
   {
-    "name": "isintroconfettienabledstage",
+    "name": "stadiumgoalnetpattern",
     "order": 57,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
-    },
-    "default": 9
-  },
-  {
-    "name": "inflatables",
-    "order": 58,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 8191
+      "max": 1
     },
     "default": 0
   },
   {
-    "name": "player_display_ptw_tr",
+    "name": "stadawaytechzonemaxz",
+    "order": 58,
+    "type": "int",
+    "range": {
+      "min": -65536,
+      "max": 65535
+    },
+    "default": 0
+  },
+  {
+    "name": "stadiumgoalnettension",
     "order": 59,
     "type": "int",
     "range": {
       "min": 0,
+      "max": 2
+    },
+    "default": 0
+  },
+  {
+    "name": "tod1weather",
+    "order": 60,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 3
+    },
+    "default": 3
+  },
+  {
+    "name": "dlc",
+    "order": 61,
+    "type": "int",
+    "range": {
+      "min": 0,
       "max": 1
     },
     "default": 0
   },
   {
-    "name": "isstadiumdressingunique",
-    "order": 60,
+    "name": "tod2weather",
+    "order": 62,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 3
+    },
+    "default": 3
+  },
+  {
+    "name": "adboardtype",
+    "order": 63,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 3
     },
     "default": 0
   },
   {
-    "name": "isvanishingsprayhomeenabled",
-    "order": 61,
+    "name": "rotation360degree",
+    "order": 64,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 360
     },
-    "default": 1
+    "default": 0
   },
   {
-    "name": "isflamethrowercannonsenabledstage",
-    "order": 62,
+    "name": "camerazoom",
+    "order": 65,
     "type": "int",
     "range": {
       "min": 0,
       "max": 15
     },
     "default": 9
-  },
-  {
-    "name": "isvanishingsprayenabled",
-    "order": 63,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 1
-  },
-  {
-    "name": "stanchionflamethrower",
-    "order": 64,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 1
-    },
-    "default": 0
-  },
-  {
-    "name": "has_var",
-    "order": 65,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 1
-    },
-    "default": 0
   },
   {
     "name": "languageregion",
     "order": 66,
     "type": "int",
     "range": {
-      "min": 1,
+      "min": 0,
       "max": 25
     },
     "default": 1
   },
   {
-    "name": "ispitchtarpsenabledstage",
+    "name": "adboardendlinedistance",
     "order": 67,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 999999
     },
-    "default": 9
+    "default": 500
   },
   {
-    "name": "celebrationbackboard",
+    "name": "presassetthree",
     "order": 68,
     "type": "int",
     "range": {
       "min": 0,
       "max": 2
     },
-    "default": 0
+    "default": 2
   },
   {
-    "name": "adboardplacementstage",
+    "name": "iseditable",
     "order": 69,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 9
-  },
-  {
-    "name": "isstadiumdressinguniquestage",
-    "order": 70,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 9
-  },
-  {
-    "name": "iscenterpitchflagenabled",
-    "order": 71,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 9
-  },
-  {
-    "name": "pitchbranding",
-    "order": 72,
     "type": "int",
     "range": {
       "min": 0,
@@ -731,128 +697,118 @@
     "default": 0
   },
   {
-    "name": "isgoallinetechhomeleagueenabled",
-    "order": 73,
+    "name": "isdynamic",
+    "order": 70,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
-    },
-    "default": 0
-  },
-  {
-    "name": "stadiumcrowdmap",
-    "order": 74,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 0
-  },
-  {
-    "name": "celebrationstage",
-    "order": 75,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 2
+      "max": 1
     },
     "default": 1
   },
   {
-    "name": "celebrationarchedboard",
+    "name": "tod3weather",
+    "order": 71,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 3
+    },
+    "default": 0
+  },
+  {
+    "name": "upgradestyle",
+    "order": 72,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 5
+    },
+    "default": 0
+  },
+  {
+    "name": "defaultweather",
+    "order": 73,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 8
+    },
+    "default": 0
+  },
+  {
+    "name": "genericrank",
+    "order": 74,
+    "type": "int",
+    "range": {
+      "min": -1,
+      "max": 10
+    },
+    "default": -1
+  },
+  {
+    "name": "timeofday1",
+    "order": 75,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 5
+    },
+    "default": 1
+  },
+  {
+    "name": "supportsunlicensedbanners",
     "order": 76,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 2
+      "max": 1
     },
-    "default": 0
+    "default": 1
   },
   {
-    "name": "isballplinthenabled",
+    "name": "timeofday2",
     "order": 77,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 15
+      "max": 5
     },
-    "default": 0
+    "default": 3
   },
   {
-    "name": "introteamportrait",
+    "name": "supportsunlicensedtifos",
     "order": 78,
     "type": "int",
     "range": {
       "min": 0,
       "max": 1
     },
-    "default": 0
+    "default": 1
   },
   {
-    "name": "onpitchgraphics",
+    "name": "pitchlinecolor",
     "order": 79,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 1
+      "max": 10
     },
     "default": 0
   },
   {
-    "name": "crowdskintonecode",
+    "name": "stadawaytechzoneminx",
     "order": 80,
     "type": "int",
     "range": {
-      "min": 0,
-      "max": 15
+      "min": -65536,
+      "max": 65535
     },
-    "default": 2
-  },
-  {
-    "name": "competitionchampionid",
-    "order": 81,
-    "type": "int",
-    "range": {
-      "min": -1,
-      "max": 200000
-    },
-    "default": -1
-  },
-  {
-    "name": "isarchwayenabledstage",
-    "order": 82,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 9
-  },
-  {
-    "name": "isgoalnetadsenabledstage",
-    "order": 83,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 9
-  },
-  {
-    "name": "isstadiumdressingenabled",
-    "order": 84,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
-    "default": 9
+    "default": 400
   },
   {
     "name": "goalnetads",
-    "order": 85,
+    "order": 81,
     "type": "int",
     "range": {
       "min": 0,

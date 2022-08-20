@@ -9,7 +9,8 @@ export enum Fifa {
   Fifa18 = 'fifa18',
   Fifa19 = 'fifa19',
   Fifa20 = 'fifa20',
-  Fifa21 = 'fifa21'
+  Fifa21 = 'fifa21',
+  Fifa22 = 'fifa22',
 }
 
 export enum Table {
