@@ -386,7 +386,7 @@
     "type": "int",
     "range": {
       "min": 0,
-      "max": 39
+      "max": 31
     },
     "default": 1
   },

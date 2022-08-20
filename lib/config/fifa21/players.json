@@ -745,7 +745,7 @@
     "type": "int",
     "range": {
       "min": 0,
-      "max": 100000
+      "max": 2
     },
     "default": 0
   },

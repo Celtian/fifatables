@@ -21,7 +21,7 @@
   type: int
   range:
     min: 1
-    max: 4000
+    max: 7
   default: 1
 - name: iscompetitionscarfenabled
   order: 4

@@ -1,0 +1,1273 @@
+[
+  {
+    "name": "firstnameid",
+    "order": 0,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 50000
+    },
+    "default": 0
+  },
+  {
+    "name": "lastnameid",
+    "order": 1,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 50000
+    },
+    "default": 0
+  },
+  {
+    "name": "playerjerseynameid",
+    "order": 2,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 50000
+    },
+    "default": 0
+  },
+  {
+    "name": "commonnameid",
+    "order": 3,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 50000
+    },
+    "default": 0
+  },
+  {
+    "name": "skintypecode",
+    "order": 4,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 160
+    },
+    "default": 0
+  },
+  {
+    "name": "trait2",
+    "order": 5,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 16777215
+    },
+    "default": 0
+  },
+  {
+    "name": "haircolorcode",
+    "order": 6,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 50
+    },
+    "default": 1
+  },
+  {
+    "name": "facialhairtypecode",
+    "order": 7,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 50
+    },
+    "default": 0
+  },
+  {
+    "name": "curve",
+    "order": 8,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "jerseystylecode",
+    "order": 9,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "agility",
+    "order": 10,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "tattooback",
+    "order": 11,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1023
+    },
+    "default": 0
+  },
+  {
+    "name": "accessorycode4",
+    "order": 12,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 27
+    },
+    "default": 0
+  },
+  {
+    "name": "gksavetype",
+    "order": 13,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "positioning",
+    "order": 14,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "tattooleftarm",
+    "order": 15,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1023
+    },
+    "default": 0
+  },
+  {
+    "name": "hairtypecode",
+    "order": 16,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1023
+    },
+    "default": 0
+  },
+  {
+    "name": "standingtackle",
+    "order": 17,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "preferredposition3",
+    "order": 18,
+    "type": "int",
+    "range": {
+      "min": -1,
+      "max": 32
+    },
+    "default": -1
+  },
+  {
+    "name": "longpassing",
+    "order": 19,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "penalties",
+    "order": 20,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "animfreekickstartposcode",
+    "order": 21,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 9
+    },
+    "default": 0
+  },
+  {
+    "name": "isretiring",
+    "order": 22,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "longshots",
+    "order": 23,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "gkdiving",
+    "order": 24,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "interceptions",
+    "order": 25,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "shoecolorcode2",
+    "order": 26,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 31
+    },
+    "default": 31
+  },
+  {
+    "name": "crossing",
+    "order": 27,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "potential",
+    "order": 28,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "gkreflexes",
+    "order": 29,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "finishingcode1",
+    "order": 30,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 100000
+    },
+    "default": 0
+  },
+  {
+    "name": "reactions",
+    "order": 31,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "composure",
+    "order": 32,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "vision",
+    "order": 33,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "contractvaliduntil",
+    "order": 34,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 2047
+    },
+    "default": 2020
+  },
+  {
+    "name": "finishing",
+    "order": 35,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 100000
+    },
+    "default": 0
+  },
+  {
+    "name": "dribbling",
+    "order": 36,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "slidingtackle",
+    "order": 37,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "accessorycode3",
+    "order": 38,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 27
+    },
+    "default": 0
+  },
+  {
+    "name": "accessorycolourcode1",
+    "order": 39,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 13
+    },
+    "default": 0
+  },
+  {
+    "name": "headtypecode",
+    "order": 40,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 16000
+    },
+    "default": 0
+  },
+  {
+    "name": "driref",
+    "order": 41,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "sprintspeed",
+    "order": 42,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "height",
+    "order": 43,
+    "type": "int",
+    "range": {
+      "min": 130,
+      "max": 220
+    },
+    "default": 180
+  },
+  {
+    "name": "hasseasonaljersey",
+    "order": 44,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 7
+    },
+    "default": 0
+  },
+  {
+    "name": "tattoohead",
+    "order": 45,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1023
+    },
+    "default": 0
+  },
+  {
+    "name": "preferredposition2",
+    "order": 46,
+    "type": "int",
+    "range": {
+      "min": -1,
+      "max": 32
+    },
+    "default": -1
+  },
+  {
+    "name": "strength",
+    "order": 47,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "shoetypecode",
+    "order": 48,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1000
+    },
+    "default": 0
+  },
+  {
+    "name": "birthdate",
+    "order": 49,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1048575
+    },
+    "default": 148733
+  },
+  {
+    "name": "preferredposition1",
+    "order": 50,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 31
+    },
+    "default": 0
+  },
+  {
+    "name": "tattooleftleg",
+    "order": 51,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1023
+    },
+    "default": 0
+  },
+  {
+    "name": "ballcontrol",
+    "order": 52,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "phypos",
+    "order": 53,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "shotpower",
+    "order": 54,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "trait1",
+    "order": 55,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1073741823
+    },
+    "default": 0
+  },
+  {
+    "name": "socklengthcode",
+    "order": 56,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 4
+    },
+    "default": 0
+  },
+  {
+    "name": "weight",
+    "order": 57,
+    "type": "int",
+    "range": {
+      "min": 30,
+      "max": 150
+    },
+    "default": 80
+  },
+  {
+    "name": "hashighqualityhead",
+    "order": 58,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "gkglovetypecode",
+    "order": 59,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 127
+    },
+    "default": 0
+  },
+  {
+    "name": "tattoorightarm",
+    "order": 60,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1023
+    },
+    "default": 0
+  },
+  {
+    "name": "balance",
+    "order": 61,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "gender",
+    "order": 62,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "headassetid",
+    "order": 63,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 500000
+    },
+    "default": 0
+  },
+  {
+    "name": "gkkicking",
+    "order": 64,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "defspe",
+    "order": 65,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "internationalrep",
+    "order": 66,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 5
+    },
+    "default": 1
+  },
+  {
+    "name": "shortpassing",
+    "order": 67,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "freekickaccuracy",
+    "order": 68,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "skillmoves",
+    "order": 69,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 4
+    },
+    "default": 0
+  },
+  {
+    "name": "faceposerpreset",
+    "order": 70,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 15
+    },
+    "default": 0
+  },
+  {
+    "name": "usercaneditname",
+    "order": 71,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "avatarpomid",
+    "order": 72,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 511
+    },
+    "default": 0
+  },
+  {
+    "name": "attackingworkrate",
+    "order": 73,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 2
+    },
+    "default": 0
+  },
+  {
+    "name": "finishingcode2",
+    "order": 74,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 2
+    },
+    "default": 0
+  },
+  {
+    "name": "aggression",
+    "order": 75,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "acceleration",
+    "order": 76,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "paskic",
+    "order": 77,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "headingaccuracy",
+    "order": 78,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "iscustomized",
+    "order": 79,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "eyebrowcode",
+    "order": 80,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 15
+    },
+    "default": 0
+  },
+  {
+    "name": "runningcode2",
+    "order": 81,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 100000
+    },
+    "default": 0
+  },
+  {
+    "name": "modifier",
+    "order": 82,
+    "type": "int",
+    "range": {
+      "min": -5,
+      "max": 5
+    },
+    "default": 0
+  },
+  {
+    "name": "gkhandling",
+    "order": 83,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "eyecolorcode",
+    "order": 84,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 16
+    },
+    "default": 3
+  },
+  {
+    "name": "jerseysleevelengthcode",
+    "order": 85,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 7
+    },
+    "default": 0
+  },
+  {
+    "name": "accessorycolourcode3",
+    "order": 86,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 13
+    },
+    "default": 0
+  },
+  {
+    "name": "accessorycode1",
+    "order": 87,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 27
+    },
+    "default": 0
+  },
+  {
+    "name": "playerjointeamdate",
+    "order": 88,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1048575
+    },
+    "default": 159690
+  },
+  {
+    "name": "headclasscode",
+    "order": 89,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 2
+    },
+    "default": 1
+  },
+  {
+    "name": "defensiveworkrate",
+    "order": 90,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 2
+    },
+    "default": 0
+  },
+  {
+    "name": "tattoofront",
+    "order": 91,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1023
+    },
+    "default": 0
+  },
+  {
+    "name": "nationality",
+    "order": 92,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 3000
+    },
+    "default": 1
+  },
+  {
+    "name": "preferredfoot",
+    "order": 93,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 2
+    },
+    "default": 1
+  },
+  {
+    "name": "sideburnscode",
+    "order": 94,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 3
+    },
+    "default": 0
+  },
+  {
+    "name": "weakfootabilitytypecode",
+    "order": 95,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 5
+    },
+    "default": 3
+  },
+  {
+    "name": "jumping",
+    "order": 96,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "personality",
+    "order": 97,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 5
+    },
+    "default": 1
+  },
+  {
+    "name": "gkkickstyle",
+    "order": 98,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 3
+    },
+    "default": 0
+  },
+  {
+    "name": "stamina",
+    "order": 99,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "playerid",
+    "order": 100,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 500000
+    },
+    "default": 1,
+    "unique": true
+  },
+  {
+    "name": "marking",
+    "order": 101,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "accessorycolourcode4",
+    "order": 102,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 13
+    },
+    "default": 0
+  },
+  {
+    "name": "gkpositioning",
+    "order": 103,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "headvariation",
+    "order": 104,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 31
+    },
+    "default": 0
+  },
+  {
+    "name": "skillmoveslikelihood",
+    "order": 105,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 4
+    },
+    "default": 0
+  },
+  {
+    "name": "shohan",
+    "order": 106,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "skintonecode",
+    "order": 107,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 11
+    },
+    "default": 2
+  },
+  {
+    "name": "shortstyle",
+    "order": 108,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "overallrating",
+    "order": 109,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "smallsidedshoetypecode",
+    "order": 110,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1000
+    },
+    "default": 500
+  },
+  {
+    "name": "emotion",
+    "order": 111,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 5
+    },
+    "default": 3
+  },
+  {
+    "name": "runstylecode",
+    "order": 112,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 32
+    },
+    "default": 0
+  },
+  {
+    "name": "jerseyfit",
+    "order": 113,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 2
+    },
+    "default": 0
+  },
+  {
+    "name": "accessorycode2",
+    "order": 114,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 27
+    },
+    "default": 0
+  },
+  {
+    "name": "shoedesigncode",
+    "order": 115,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 3
+    },
+    "default": 0
+  },
+  {
+    "name": "shoecolorcode1",
+    "order": 116,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 31
+    },
+    "default": 30
+  },
+  {
+    "name": "hairstylecode",
+    "order": 117,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 31
+    },
+    "default": 0
+  },
+  {
+    "name": "bodytypecode",
+    "order": 118,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 512
+    },
+    "default": 1
+  },
+  {
+    "name": "animpenaltiesstartposcode",
+    "order": 119,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 8
+    },
+    "default": 0
+  },
+  {
+    "name": "pacdiv",
+    "order": 120,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "runningcode1",
+    "order": 121,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 100000
+    },
+    "default": 0
+  },
+  {
+    "name": "preferredposition4",
+    "order": 122,
+    "type": "int",
+    "range": {
+      "min": -1,
+      "max": 32
+    },
+    "default": -1
+  },
+  {
+    "name": "volleys",
+    "order": 123,
+    "type": "int",
+    "range": {
+      "min": 1,
+      "max": 99
+    },
+    "default": 50
+  },
+  {
+    "name": "accessorycolourcode2",
+    "order": 124,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 13
+    },
+    "default": 0
+  },
+  {
+    "name": "tattoorightleg",
+    "order": 125,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1023
+    },
+    "default": 0
+  },
+  {
+    "name": "facialhaircolorcode",
+    "order": 126,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 11
+    },
+    "default": 0
+  }
+]
