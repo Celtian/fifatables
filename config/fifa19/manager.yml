@@ -60,9 +60,9 @@
   order: 9
   type: int
   range:
-    min: 1
+    min: 0
     max: 200000
-  default: 1
+  default: 0
 - name: suittypeid
   order: 10
   type: int

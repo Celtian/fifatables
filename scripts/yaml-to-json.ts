@@ -1,9 +1,9 @@
-import { mkdirSync, writeFileSync } from "fs";
-import { readFileSync } from "fs-extra";
-import { load } from "js-yaml";
-import { dirname, join } from "path";
-import { cwd } from "process";
-import { Field, Fifa, Table } from "../lib";
+import { mkdirSync, writeFileSync } from 'fs';
+import { readFileSync } from 'fs-extra';
+import { load } from 'js-yaml';
+import { dirname, join } from 'path';
+import { cwd } from 'process';
+import { Field, Fifa, Table } from '../src';
 
 /**
  * @desription it reads 'config' folder
@@ -24,7 +24,7 @@ const readConfig = (fifa: Fifa, table: Table): Field[] => {
  * @description it removes all data in config folder
  */
 const clearConfigFolder = (): void => {
-  mkdirSync(join(cwd(), 'lib', 'config'), { recursive: true });
+  mkdirSync(join(cwd(), 'src', 'config'), { recursive: true });
 }
 
 /**
@@ -35,7 +35,7 @@ const generateConfigFolder = (): void => {
     for (const table of Object.values(Table)) {
       console.log(fifa + ' ' + table);
       const json: Field[] = readConfig(fifa as Fifa, table as Table);
-      const outputFile: string = join(cwd(), 'lib', 'config', fifa, `${table}.json`);
+      const outputFile: string = join(cwd(), 'src', 'config', fifa, `${table}.json`);
       const data: string = JSON.stringify(json, null, 2);
       mkdirSync(dirname(outputFile), { recursive: true });
       writeFileSync(outputFile, data);
@@ -53,12 +53,12 @@ const generateIndex = (): void => {
       line.push(`export { default as ${fifa}_${table} } from './${fifa}/${table}.json';`)
     }
   }
-  const output: string = join(cwd(), 'lib', 'config', 'index.ts');
+  const output: string = join(cwd(), 'src', 'config', 'index.ts');
   writeFileSync(output, line.join('\n'));
 }
 
 /**
- * @description it generates 'lib/shared/config.ts'
+ * @description it generates 'src/shared/config.ts'
  */
 const generateConfig = (): void => {
   const line: string[] = [];
@@ -102,7 +102,7 @@ const generateConfig = (): void => {
   line.push('\t}');
   line.push('}');
 
-  const output: string = join(cwd(), 'lib', 'shared', 'config.ts');
+  const output: string = join(cwd(), 'src', 'shared', 'config.ts');
   writeFileSync(output, line.join('\n'));
 }
 
