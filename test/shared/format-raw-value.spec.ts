@@ -1,19 +1,5 @@
-import { Datatype, Field } from '../../lib/shared/interfaces';
-import { formatRawValue } from '../../lib/shared/utils';
-
-
-/*
-export const formatRawValue = (field: Field, value: string): string | number => {
-  switch (field.type) {
-    case Datatype.Int:
-      return Number(value);
-    case Datatype.Float:
-      return Number(value.replace(',', '.'));
-    default:
-      return value;
-  }
-}
-*/
+import { Datatype, Field } from '../../src/shared/interfaces';
+import { formatRawValue } from '../../src/shared/utils';
 
 describe('formatRawValue', () => {
   it('should return integer', () => {

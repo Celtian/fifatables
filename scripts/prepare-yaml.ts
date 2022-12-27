@@ -4,7 +4,7 @@ import { decodeStream } from 'iconv-lite';
 import * as yaml from 'js-yaml';
 import { dirname, join } from 'path';
 import { cwd } from 'process';
-import { Datatype, Field, Table } from '../lib/shared';
+import { Datatype, Field, Table } from '../src/shared';
 import { HeadTransform } from './head-transform';
 
 const fifa = process.argv[2];

@@ -1,4 +1,4 @@
-import { Fifa, fifaConfig, fifaTableConfig, formatRawValue, sortByOrder, Table } from './lib';
+import { Fifa, fifaConfig, fifaTableConfig, formatRawValue, sortByOrder, Table } from './src';
 
 const fifaConfigDemo = (): void => {
   console.log('⚽⚽⚽ Fifa config demo ⚽⚽⚽');

@@ -1,5 +1,5 @@
-import { Datatype, Field } from '../../lib/shared/interfaces';
-import { sortByOrder } from '../../lib/shared/utils';
+import { Datatype, Field } from '../../src/shared/interfaces';
+import { sortByOrder } from '../../src/shared/utils';
 
 describe('sortByOrder', () => {
   it('should return correct value', () => {
