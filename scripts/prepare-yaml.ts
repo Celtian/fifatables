@@ -10,7 +10,7 @@ import { HeadTransform } from './head-transform';
 const fifa = process.argv[2];
 
 if (!fifa) {
-  console.log('Missing argument. Use it like: "yarn prepare-yaml fifa22"');
+  console.log('Missing argument. Use it like: "yarn prepare-yaml fifa23"');
   process.exit(1);
 }
 

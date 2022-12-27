@@ -1,49 +1,56 @@
 [
   {
-    "name": "firstname",
+    "name": "manufacturerid",
     "order": 0,
-    "type": "string",
-    "default": ""
-  },
-  {
-    "name": "surname",
-    "order": 1,
-    "type": "string",
-    "default": ""
-  },
-  {
-    "name": "managerid",
-    "order": 2,
     "type": "int",
     "range": {
       "min": 1,
-      "max": 10000
+      "max": 256
     },
-    "default": 1,
-    "unique": true
+    "default": 3
   },
   {
-    "name": "headid",
-    "order": 3,
+    "name": "issmallsided",
+    "order": 1,
     "type": "int",
     "range": {
       "min": 0,
-      "max": 500000
+      "max": 2
     },
     "default": 0
   },
   {
-    "name": "height",
+    "name": "ishighboot",
+    "order": 2,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "powid",
+    "order": 3,
+    "type": "int",
+    "range": {
+      "min": -1,
+      "max": 32000
+    },
+    "default": -1
+  },
+  {
+    "name": "islocked",
     "order": 4,
     "type": "int",
     "range": {
-      "min": 130,
-      "max": 215
+      "min": 0,
+      "max": 1
     },
-    "default": 180
+    "default": 0
   },
   {
-    "name": "hashighqualityhead",
+    "name": "islegacy",
     "order": 5,
     "type": "int",
     "range": {
@@ -53,8 +60,28 @@
     "default": 0
   },
   {
-    "name": "gender",
+    "name": "shoecolor1",
     "order": 6,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 31
+    },
+    "default": 30
+  },
+  {
+    "name": "gender",
+    "order": 7,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 2
+    },
+    "default": 0
+  },
+  {
+    "name": "islicensed",
+    "order": 8,
     "type": "int",
     "range": {
       "min": 0,
@@ -63,83 +90,63 @@
     "default": 0
   },
   {
-    "name": "suitvariationid",
-    "order": 7,
+    "name": "shoetype",
+    "order": 9,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1000
+    },
+    "default": 0
+  },
+  {
+    "name": "isembargoed",
+    "order": 10,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "isavailableinstore",
+    "order": 11,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 1
+  },
+  {
+    "name": "isadidas",
+    "order": 12,
+    "type": "int",
+    "range": {
+      "min": 0,
+      "max": 1
+    },
+    "default": 0
+  },
+  {
+    "name": "shoedesign",
+    "order": 13,
     "type": "int",
     "range": {
       "min": 0,
       "max": 3
     },
-    "default": 1
-  },
-  {
-    "name": "faceposerpreset",
-    "order": 8,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 15
-    },
     "default": 0
   },
   {
-    "name": "teamid",
-    "order": 9,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 200000
-    },
-    "default": 0
-  },
-  {
-    "name": "suittypeid",
-    "order": 10,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 2
-    },
-    "default": 0
-  },
-  {
-    "name": "eyecolorcode",
-    "order": 11,
-    "type": "int",
-    "range": {
-      "min": 1,
-      "max": 16
-    },
-    "default": 3
-  },
-  {
-    "name": "headclasscode",
-    "order": 12,
-    "type": "int",
-    "range": {
-      "min": 0,
-      "max": 2
-    },
-    "default": 1
-  },
-  {
-    "name": "skintonecode",
-    "order": 13,
-    "type": "int",
-    "range": {
-      "min": 1,
-      "max": 11
-    },
-    "default": 2
-  },
-  {
-    "name": "bodytypecode",
+    "name": "shoecolor2",
     "order": 14,
     "type": "int",
     "range": {
-      "min": 1,
-      "max": 128
+      "min": 0,
+      "max": 31
     },
-    "default": 1
+    "default": 31
   }
 ]
