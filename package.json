@@ -1,6 +1,6 @@
 {
   "name": "fifatables",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Definition of Fifa Soccer Game tables",
   "main": "index.js",
   "scripts": {
