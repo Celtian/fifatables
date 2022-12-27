@@ -50,7 +50,7 @@ _Type this into your ts file._
 
 ## Supported versions of Fifa Soccer
 
-**Fifa 11 - Fifa 22**
+**Fifa 11 - Fifa 23**
 
 ## Supported tables
 

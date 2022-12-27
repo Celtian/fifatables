@@ -11,6 +11,7 @@ export enum Fifa {
   Fifa20 = 'fifa20',
   Fifa21 = 'fifa21',
   Fifa22 = 'fifa22',
+  Fifa23 = 'fifa23',
 }
 
 export enum Table {

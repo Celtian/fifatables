@@ -300,6 +300,31 @@ import {
 	fifa22_teamplayerlinks,
 	fifa22_teams,
 	fifa22_teamstadiumlinks,
+	fifa23_competition,
+	fifa23_dcplayernames,
+	fifa23_formations,
+	fifa23_leaguerefereelinks,
+	fifa23_leagues,
+	fifa23_leagueteamlinks,
+	fifa23_manager,
+	fifa23_nations,
+	fifa23_playerboots,
+	fifa23_player_grudgelove,
+	fifa23_playerloans,
+	fifa23_playernames,
+	fifa23_players,
+	fifa23_previousteam,
+	fifa23_referee,
+	fifa23_rivals,
+	fifa23_rowteamnationlinks,
+	fifa23_shoecolors,
+	fifa23_stadiums,
+	fifa23_teamballs,
+	fifa23_teamkits,
+	fifa23_teamnationlinks,
+	fifa23_teamplayerlinks,
+	fifa23_teams,
+	fifa23_teamstadiumlinks,
 } from '../config';
 
 
@@ -999,6 +1024,64 @@ const readFifa22Table = (table: Table): Field[] => {
 }
 
 
+const readFifa23Table = (table: Table): Field[] => {
+	switch (table) {
+		case Table.Competition:
+			return fifa23_competition as Field[];
+		case Table.DcPlayerNames:
+			return fifa23_dcplayernames as Field[];
+		case Table.Formations:
+			return fifa23_formations as Field[];
+		case Table.LeagueRefereeLinks:
+			return fifa23_leaguerefereelinks as Field[];
+		case Table.Leagues:
+			return fifa23_leagues as Field[];
+		case Table.LeagueTeamLinks:
+			return fifa23_leagueteamlinks as Field[];
+		case Table.Manager:
+			return fifa23_manager as Field[];
+		case Table.Nations:
+			return fifa23_nations as Field[];
+		case Table.PlayerBoots:
+			return fifa23_playerboots as Field[];
+		case Table.PlayerGrudgelove:
+			return fifa23_player_grudgelove as Field[];
+		case Table.PlayerLoans:
+			return fifa23_playerloans as Field[];
+		case Table.PlayerNames:
+			return fifa23_playernames as Field[];
+		case Table.Players:
+			return fifa23_players as Field[];
+		case Table.PreviousTeam:
+			return fifa23_previousteam as Field[];
+		case Table.Referee:
+			return fifa23_referee as Field[];
+		case Table.Rivals:
+			return fifa23_rivals as Field[];
+		case Table.RowTeamNationLinks:
+			return fifa23_rowteamnationlinks as Field[];
+		case Table.ShoeColors:
+			return fifa23_shoecolors as Field[];
+		case Table.Stadiums:
+			return fifa23_stadiums as Field[];
+		case Table.TeamBalls:
+			return fifa23_teamballs as Field[];
+		case Table.TeamKits:
+			return fifa23_teamkits as Field[];
+		case Table.TeamNationLinks:
+			return fifa23_teamnationlinks as Field[];
+		case Table.TeamPlayerLinks:
+			return fifa23_teamplayerlinks as Field[];
+		case Table.Teams:
+			return fifa23_teams as Field[];
+		case Table.TeamStadiumLinks:
+			return fifa23_teamstadiumlinks as Field[];
+		default:
+			return [];
+	}
+}
+
+
 export const fifaTableConfig = (fifa: Fifa, table: Table): Field[] => {
 	switch (fifa) {
 		case Fifa.Fifa11:
@@ -1025,6 +1108,8 @@ export const fifaTableConfig = (fifa: Fifa, table: Table): Field[] => {
 			return readFifa21Table(table)
 		case Fifa.Fifa22:
 			return readFifa22Table(table)
+		case Fifa.Fifa23:
+			return readFifa23Table(table)
 		default:
 			return [];
 	}
