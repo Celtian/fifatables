@@ -84,7 +84,7 @@ _Type this into your ts file._
 
 ## License
 
-Copyright &copy; 2021 - 2022 [Dominik Hladik](https://github.com/Celtian)
+Copyright &copy; 2021 - 2023 [Dominik Hladik](https://github.com/Celtian)
 
 All contents are licensed under the [MIT license].
 
