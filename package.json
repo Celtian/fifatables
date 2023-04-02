@@ -1,6 +1,6 @@
 {
   "name": "fifatables",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Definition of Fifa Soccer Game tables",
   "scripts": {
     "start": "rimraf dist && tsc-watch --build tsconfig.es5.json --onSuccess 'yarn postbuild'",
