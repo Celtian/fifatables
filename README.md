@@ -14,7 +14,7 @@
 
 > Library for managing Fifa Soccer tables
 
-## Install
+## 🛠️ Install
 
 _Nodejs 12 or higher need to be installed first_
 
@@ -28,7 +28,7 @@ or
 yarn add fifatables
 ```
 
-## Quick start
+## 🚀 Quick start
 
 _Type this into your ts file._
 
@@ -48,11 +48,13 @@ _Type this into your ts file._
   console.log(formatRawValue(fifaTableConfig(Fifa.Fifa11, Table.Leagues)[0], '2000'));
 ```
 
-## Supported versions of Fifa Soccer
+## 🛠️ Options
+
+### Supported versions of Fifa Soccer
 
 **Fifa 11 - Fifa 23**
 
-## Supported tables
+### Supported tables
 
 | Table                  | Supported |
 | ---------------------- | --------- |
@@ -82,9 +84,9 @@ _Type this into your ts file._
 | **teams**              | ✓         |
 | **teamstadiumlinks**   | ✓         |
 
-## License
+## 🪪 License
 
-Copyright &copy; 2021 - 2023 [Dominik Hladik](https://github.com/Celtian)
+Copyright &copy; 2021 - 2024 [Dominik Hladik](https://github.com/Celtian)
 
 All contents are licensed under the [MIT license].
 
