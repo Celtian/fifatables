@@ -26,6 +26,7 @@
     min: 0
     max: 3000
   default: 0
+  unique: true
 - name: teamid
   order: 4
   type: int
