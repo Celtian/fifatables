@@ -131,6 +131,7 @@
     min: 0
     max: 3000
   default: 0
+  unique: true
 - name: nummatchesplayed
   order: 19
   type: int
