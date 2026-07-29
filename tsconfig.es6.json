@@ -7,7 +7,9 @@
     "ignoreDeprecations": "6.0",
     "declaration": true,
     "outDir": "./dist/es6",
-    "moduleResolution": "node"
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "types": ["node"]
   },
   "include": ["src/**/*"]
 }

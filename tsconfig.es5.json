@@ -6,7 +6,9 @@
     "ignoreDeprecations": "6.0",
     "declaration": true,
     "outDir": "./dist/es5",
+    "rootDir": "./src",
     "moduleResolution": "node",
+    "types": ["node"],
     "lib": ["ES2020", "DOM"]
   },
   "include": ["src/**/*"]
