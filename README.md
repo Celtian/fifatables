@@ -19,13 +19,7 @@
 _Nodejs 12 or higher need to be installed first_
 
 ```terminal
-npm install fifatables
-```
-
-or
-
-```terminal
-yarn add fifatables
+bun add fifatables
 ```
 
 ## 🚀 Quick start
