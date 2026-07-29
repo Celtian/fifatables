@@ -3,10 +3,10 @@
   "version": "0.2.10",
   "description": "Definition of Fifa Soccer Game tables",
   "scripts": {
-    "start": "rimraf dist && tsc-watch --build tsconfig.es5.json --onSuccess 'yarn postbuild'",
-    "demo": "yarn tsx ./demo.ts",
+    "start": "rimraf dist && tsc-watch --build tsconfig.es5.json --onSuccess 'bun run postbuild'",
+    "demo": "tsx ./demo.ts",
     "build": "rimraf dist && tsc --build tsconfig.es6.json && tsc --build tsconfig.es5.json",
-    "postbuild": "copyfiles ./package.json ./README.md ./LICENSE ./dist && yarn prepare-dist",
+    "postbuild": "copyfiles ./package.json ./README.md ./LICENSE ./dist && bun run prepare-dist",
     "test": "vitest run",
     "prepare-dist": "tsx ./scripts/prepare-dist.ts",
     "prepare-yaml": "tsx ./scripts/prepare-yaml.ts",
@@ -15,12 +15,12 @@
     "gpr:setup": "tsx ./scripts/gpr-setup.ts",
     "version": "auto-changelog -p && git add CHANGELOG.md",
     "postversion": "git push && git push --follow-tags",
-    "publish:beta": "yarn && yarn build && npm publish --folder dist --tag beta",
+    "publish:beta": "bun install && bun run build && npm publish --folder dist --tag beta",
     "release:beta": "npm version prerelease -m \"chore(update): prelease %s β\"",
     "release:patch": "git checkout master && npm version patch -m \"chore(update): patch release %s 🐛 \"",
     "release:minor": "git checkout master && npm version minor -m \"chore(update): release %s 🚀\"",
     "release:major": "git checkout master && npm version major -m \"chore(update): major release %s 💥 \"",
-    "fix-vulnerabilities": "npx yarn-audit-fix && npx browserslist --update-db"
+    "fix-vulnerabilities": "bun update && bun audit && bunx update-browserslist-db@latest"
   },
   "repository": {
     "type": "git",
@@ -35,9 +35,10 @@
     "url": "https://github.com/Celtian/fifatables/issues"
   },
   "homepage": "https://github.com/Celtian/fifatables#readme",
+  "packageManager": "bun@1.3.14",
   "engines": {
     "node": ">= 12",
-    "npm": "please-use-yarn"
+    "bun": ">=1.3.14"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
